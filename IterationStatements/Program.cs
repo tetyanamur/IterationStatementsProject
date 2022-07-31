@@ -52,10 +52,10 @@ namespace IterationStatements
 
             // Create a foreach loop using the collection - numbers
                 //In the scope of the foreach loop, print each number in numbers
-             
+             foreach (int i in numbers)
 
 
-            Console.WriteLine("");
+            Console.WriteLine("i");
             Console.WriteLine("Decrease:");
 
 
@@ -66,9 +66,9 @@ namespace IterationStatements
                 // Decrement i by 1
 
             //start for loop here
-            for(int i = 199; i < numbers.Count; i--)
+            for(int i = 199; i < numbers.Count && i>=0; i--)
             {
-                Console.WriteLine(i);  // place numbers[i] inside of the Console.WriteLine() method
+                Console.WriteLine($"{numbers[i]}");  // place numbers[i] inside of the Console.WriteLine() method
             }
 
             //------------End of exercise
